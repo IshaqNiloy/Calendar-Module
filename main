@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import datetime
+import calendar
+
+month, day, year = map(int, input().split())#Takes the input, removes the spaces and stores them in the variables
+my_date = datetime.date(year, month, day)#date() represents an object that takes three parame
+print(calendar.day_name[my_date.weekday()])#weekday() returns an integer that represents the position of a day...
+In python 0 is assigned to Monday, 1 is assigned to Tuesday and so on...
+calendar.day_name[] is is a list that represents the days of the week in the current locale.
